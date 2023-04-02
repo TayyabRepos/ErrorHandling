@@ -1,10 +1,9 @@
 #Error handling
-while True:
+def sum(num1, num2):
     try:
-        age = int(input("How old are you? "))
-        print(age)
-    except:
-        print("Please enter a number")
-    else:
-        print("Thank you")
-        break
+        return num1/num2
+    except(BaseException) as err:
+        print(err)
+
+sum(2, 0)
+
